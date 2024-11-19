@@ -11,7 +11,7 @@ const Cart = () => {
         <div>
         <CgShoppingCart />
         <h3>TOTAL: ${totalPrice}</h3>
-        {cartItems.map(cartItem => <CartItem cartItem={cartItem} /> )}
+        {cartItems.map((cartItem, index) => <CartItem cartItem={cartItem} key={index}/> )}
      
       </div>
    )
