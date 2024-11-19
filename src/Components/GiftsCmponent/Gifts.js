@@ -13,7 +13,7 @@ const Gifts = () => {
                 if (selectedCategory === 'ALL GIFTS') return true; 
                 return selectedCategory === gift.category;
             })
-            .map(gift => <Gift gift={gift} /> )}
+            .map((gift, index) => <Gift gift={gift} key={index} /> )}
         </div>
     )
 }
